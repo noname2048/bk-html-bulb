@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+label {
+    width: 150px;
+    height: 75px;
+    background-color: #212121;
+
+    position: relative;
+    cursor: pointer;
+}
+
+label input {
+    appearance: none;
+}
+
+span {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color: #333;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 6px #212121;
+}
+
+label:checked ~ span {
+    left: 75px;
+}
